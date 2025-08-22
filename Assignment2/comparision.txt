@@ -1,0 +1,5 @@
+Comparison:
+
+Best First Search (Greedy Search) and A* Search differ primarily in how they use heuristics. Best First Search relies only on the heuristic function h(n) to guide exploration, which makes it faster in practice since it always picks the node that appears closest to the goal. However, this greedy approach often leads to suboptimal paths or even dead ends when the heuristic is misleading, because it ignores the actual cost already spent to reach a node (g(n)).
+
+A* Search, on the other hand, combines both the path cost g(n) and heuristic h(n) into f(n) = g(n) + h(n). This ensures that A* always finds the shortest path if the heuristic is admissible. While A* may expand more nodes and use more memory than Best First Search, it is significantly more reliable and optimal. In summary, Best First Search offers speed with a risk of inaccuracy, whereas A* balances efficiency with guaranteed correctness.
